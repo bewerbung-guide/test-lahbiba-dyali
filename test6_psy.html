@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="استشاري نفسي محترف ومدرب صحة نفسية - مساحة آمنة للتحدث والتطور">
+<title>استشاري نفسي محترف | رحلة التغيير تبدأ بخطوة واحدة</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/alexandria@latest/arabic-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/alexandria@latest/arabic-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/alexandria@latest/arabic-600-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/alexandria@latest/arabic-700-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans-arabic@latest/arabic-300-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans-arabic@latest/arabic-400-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans-arabic@latest/arabic-500-normal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-sans-arabic@latest/arabic-600-normal.css">
+
+<style>
+:root{
+  --bg:#F8F7F3;
+  --primary:#1F2937;
+  --accent:#4F8A8B;
+  --secondary:#EAF4F3;
+  --card:#FFFFFF;
+  --border:#E5E7EB;
+  --text:#111827;
+  --text-secondary:#6B7280;
+  --cta:#4F8A8B;
+  --cta-hover:#3A6F70;
+  --shadow-sm:0 2px 8px rgba(17,24,39,0.04);
+  --shadow-md:0 8px 24px rgba(17,24,39,0.06);
+  --shadow-lg:0 20px 50px rgba(17,24,39,0.08);
+  --shadow-xl:0 30px 70px rgba(17,24,39,0.12);
+  --radius-sm:12px;
+  --radius:20px;
+  --radius-lg:28px;
+  --radius-xl:36px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans Arabic',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,h5,h6{font-family:'Alexandria',sans-serif;font-weight:600;line-height:1.3;color:var(--primary)}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:20px 0;
+  transition:all .4s ease;
+  background:transparent;
+}
+.site-header.scrolled{
+  background:rgba(248,247,243,0.85);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  padding:14px 0;
+  border-bottom:1px solid rgba(229,231,235,0.5);
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.logo{
+  font-family:'Alexandria',sans-serif;
+  font-weight:700;font-size:20px;color:var(--primary);
+  display:flex;align-items:center;gap:10px;
+}
+.logo-mark{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),#6BA8A9);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:18px;
+}
+.nav-menu{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-menu a{
+  font-size:15px;color:var(--text-secondary);
+  font-weight:500;transition:color .3s;position:relative;
+}
+.nav-menu a:hover{color:var(--accent)}
+.nav-menu a::after{
+  content:'';position:absolute;bottom:-6px;right:0;
+  width:0;height:2px;background:var(--accent);
+  transition:width .3s;
+}
+.nav-menu a:hover::after{width:100%}
+.nav-cta{
+  background:var(--cta);color:#fff;
+  padding:11px 24px;border-radius:50px;
+  font-weight:500;font-size:14px;
+  transition:all .3s;border:none;cursor:pointer;
+  font-family:inherit;
+}
+.nav-cta:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;width:32px;height:32px;flex-direction:column;gap:6px;justify-content:center}
+.menu-toggle span{display:block;width:24px;height:2px;background:var(--primary);transition:all .3s;border-radius:2px}
+
+/* HERO */
+.hero{
+  min-height:100vh;padding:140px 0 80px;
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(248,247,243,0.95) 0%,rgba(248,247,243,0.75) 50%,rgba(248,247,243,0.4) 100%);
+}
+.hero-content{position:relative;z-index:2;max-width:680px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 18px;border-radius:50px;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--border);
+  font-size:13px;color:var(--accent);
+  font-weight:500;margin-bottom:28px;
+}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{
+  font-size:clamp(36px,5.5vw,64px);
+  font-weight:700;margin-bottom:24px;
+  letter-spacing:-0.02em;
+}
+.hero h1 .accent{color:var(--accent)}
+.hero-sub{
+  font-size:clamp(16px,1.8vw,20px);
+  color:var(--text-secondary);margin-bottom:40px;
+  max-width:560px;line-height:1.8;
+}
+.hero-price{
+  display:inline-flex;align-items:baseline;gap:8px;
+  margin-bottom:36px;padding:14px 22px;
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(10px);
+  border:1px solid var(--border);
+  border-radius:14px;
+}
+.hero-price .label{font-size:14px;color:var(--text-secondary)}
+.hero-price .amount{font-family:'Alexandria';font-size:24px;font-weight:700;color:var(--accent)}
+.hero-price .currency{font-size:14px;color:var(--text-secondary)}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.btn-primary{
+  background:var(--cta);color:#fff;
+  padding:16px 32px;border-radius:50px;
+  font-weight:500;font-size:16px;
+  transition:all .3s;border:none;cursor:pointer;
+  font-family:inherit;display:inline-flex;align-items:center;gap:10px;
+}
+.btn-primary:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-secondary{
+  background:rgba(255,255,255,0.7);color:var(--primary);
+  padding:16px 32px;border-radius:50px;
+  font-weight:500;font-size:16px;
+  transition:all .3s;border:1px solid var(--border);cursor:pointer;
+  font-family:inherit;display:inline-flex;align-items:center;gap:10px;
+  backdrop-filter:blur(10px);
+}
+.btn-secondary:hover{background:#fff;transform:translateY(-2px)}
+
+.trust-badges{display:flex;gap:32px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-secondary)}
+.trust-icon{
+  width:36px;height:36px;border-radius:10px;
+  background:var(--secondary);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+
+/* SECTION BASE */
+section{padding:100px 0;position:relative}
+.section-head{text-align:center;max-width:720px;margin:0 auto 64px}
+.section-tag{
+  display:inline-block;padding:6px 16px;
+  background:var(--secondary);color:var(--accent);
+  border-radius:50px;font-size:13px;font-weight:500;
+  margin-bottom:18px;
+}
+.section-head h2{font-size:clamp(28px,3.5vw,44px);margin-bottom:16px}
+.section-head p{color:var(--text-secondary);font-size:17px}
+
+/* EMOTIONAL */
+.emotional{background:var(--bg)}
+.emotional-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;margin-bottom:48px;
+}
+.emotion-card{
+  background:var(--card);padding:32px 28px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  transition:all .4s ease;
+  position:relative;overflow:hidden;
+}
+.emotion-card::before{
+  content:'';position:absolute;top:0;right:0;
+  width:100%;height:3px;
+  background:linear-gradient(90deg,var(--accent),#6BA8A9);
+  transform:scaleX(0);transform-origin:right;
+  transition:transform .4s;
+}
+.emotion-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.emotion-card:hover::before{transform:scaleX(1)}
+.emotion-num{
+  font-family:'Alexandria';font-size:13px;
+  color:var(--accent);font-weight:600;
+  margin-bottom:14px;display:block;
+}
+.emotion-card h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.emotion-card p{font-size:14px;color:var(--text-secondary);line-height:1.7}
+.emotional-close{
+  text-align:center;font-size:clamp(20px,2.5vw,28px);
+  font-family:'Alexandria';color:var(--primary);
+  font-weight:600;padding:32px;
+  background:var(--secondary);border-radius:var(--radius-lg);
+}
+.emotional-close .accent{color:var(--accent)}
+
+/* SERVICES */
+.services{background:#fff}
+.services-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
+.service-card{
+  background:var(--bg);border-radius:var(--radius);
+  overflow:hidden;transition:all .4s ease;
+  border:1px solid var(--border);
+}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl);border-color:transparent}
+.service-img{width:100%;height:220px;overflow:hidden;position:relative}
+.service-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.service-card:hover .service-img img{transform:scale(1.06)}
+.service-body{padding:28px}
+.service-body h3{font-size:20px;margin-bottom:10px}
+.service-body p{font-size:14px;color:var(--text-secondary);line-height:1.7}
+.service-link{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:16px;color:var(--accent);font-size:14px;font-weight:500;
+  transition:gap .3s;
+}
+.service-card:hover .service-link{gap:14px}
+
+/* HOW IT WORKS */
+.how{background:var(--bg)}
+.timeline{
+  max-width:780px;margin:0 auto;
+  position:relative;padding:20px 0;
+}
+.timeline::before{
+  content:'';position:absolute;right:28px;top:0;bottom:0;
+  width:2px;background:linear-gradient(180deg,var(--accent),var(--secondary));
+}
+.tl-item{
+  display:flex;gap:32px;margin-bottom:32px;
+  position:relative;align-items:flex-start;
+}
+.tl-item:last-child{margin-bottom:0}
+.tl-num{
+  width:58px;height:58px;border-radius:50%;
+  background:#fff;border:2px solid var(--accent);
+  color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Alexandria';font-size:20px;font-weight:700;
+  flex-shrink:0;position:relative;z-index:2;
+  transition:all .3s;
+}
+.tl-item:hover .tl-num{background:var(--accent);color:#fff;transform:scale(1.1)}
+.tl-content{
+  background:#fff;padding:24px 28px;
+  border-radius:var(--radius);flex:1;
+  border:1px solid var(--border);
+  transition:all .3s;
+}
+.tl-item:hover .tl-content{border-color:var(--accent);box-shadow:var(--shadow-md)}
+.tl-content h3{font-size:18px;margin-bottom:6px}
+.tl-content p{font-size:14px;color:var(--text-secondary)}
+
+/* WHY */
+.why{background:#fff}
+.why-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.why-card{
+  background:var(--bg);padding:36px 28px;
+  border-radius:var(--radius);text-align:center;
+  transition:all .4s;border:1px solid var(--border);
+}
+.why-card:hover{transform:translateY(-6px);background:#fff;box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.why-icon{
+  width:64px;height:64px;border-radius:18px;
+  background:var(--secondary);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;font-size:28px;
+  transition:all .3s;
+}
+.why-card:hover .why-icon{background:var(--accent);color:#fff;transform:rotate(-8deg)}
+.why-card h3{font-size:17px;margin-bottom:8px}
+.why-card p{font-size:14px;color:var(--text-secondary)}
+
+/* ABOUT */
+.about{background:var(--bg)}
+.about-wrap{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:center;
+}
+.about-img{
+  position:relative;border-radius:var(--radius-lg);
+  overflow:hidden;aspect-ratio:4/5;
+}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(31,41,55,0.2));
+}
+.about-badge{
+  position:absolute;bottom:24px;right:24px;
+  background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);
+  padding:14px 20px;border-radius:14px;
+  font-size:14px;color:var(--primary);font-weight:500;
+  display:flex;align-items:center;gap:10px;
+}
+.about-content .section-tag{margin-bottom:18px}
+.about-content h2{font-size:clamp(28px,3.5vw,40px);margin-bottom:20px}
+.about-content p{color:var(--text-secondary);margin-bottom:16px;font-size:16px}
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;margin-top:40px;
+}
+.stat-card{
+  background:#fff;padding:24px 16px;
+  border-radius:var(--radius);text-align:center;
+  border:1px solid var(--border);
+}
+.stat-num{
+  font-family:'Alexandria';font-size:32px;
+  font-weight:700;color:var(--accent);
+  margin-bottom:6px;
+}
+.stat-label{font-size:13px;color:var(--text-secondary)}
+
+/* TESTIMONIALS */
+.testimonials{background:#fff}
+.test-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
+}
+.test-card{
+  background:var(--bg);padding:32px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  transition:all .4s;
+}
+.test-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.test-quote{font-size:32px;color:var(--accent);font-family:serif;line-height:1;margin-bottom:12px}
+.test-text{font-size:15px;color:var(--text);line-height:1.8;margin-bottom:24px}
+.test-stars{color:#F5B041;margin-bottom:16px;font-size:14px;letter-spacing:2px}
+.test-user{display:flex;align-items:center;gap:14px}
+.test-avatar{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.test-name{font-weight:600;font-size:14px}
+.test-role{font-size:12px;color:var(--text-secondary)}
+
+/* FAQ */
+.faq{background:var(--bg)}
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{
+  background:#fff;border-radius:var(--radius);
+  margin-bottom:16px;overflow:hidden;
+  border:1px solid var(--border);
+  transition:all .3s;
+}
+.faq-item.active{border-color:var(--accent);box-shadow:var(--shadow-md)}
+.faq-q{
+  padding:22px 28px;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:'Alexandria';font-size:16px;font-weight:600;
+  transition:color .3s;
+}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{
+  width:32px;height:32px;border-radius:50%;
+  background:var(--secondary);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s;flex-shrink:0;font-size:18px;
+}
+.faq-item.active .faq-icon{transform:rotate(45deg);background:var(--accent);color:#fff}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .4s ease,padding .4s ease;
+  padding:0 28px;
+  color:var(--text-secondary);font-size:15px;line-height:1.8;
+}
+.faq-item.active .faq-a{max-height:300px;padding:0 28px 22px}
+
+/* PRICING */
+.pricing{background:#fff}
+.pricing-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;max-width:1080px;margin:0 auto;
+}
+.price-card{
+  background:var(--bg);padding:36px 28px;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border);
+  position:relative;transition:all .4s;
+}
+.price-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl)}
+.price-card.featured{
+  background:linear-gradient(135deg,var(--accent),#3A6F70);
+  color:#fff;border:none;
+}
+.price-card.featured h3,.price-card.featured .price-amount{color:#fff}
+.price-card.featured .price-features li{color:rgba(255,255,255,0.9)}
+.price-badge{
+  position:absolute;top:-12px;right:28px;
+  background:#fff;color:var(--accent);
+  padding:6px 16px;border-radius:50px;
+  font-size:12px;font-weight:600;
+  box-shadow:var(--shadow-md);
+}
+.price-card h3{font-size:20px;margin-bottom:8px}
+.price-card .price-desc{font-size:14px;color:var(--text-secondary);margin-bottom:24px}
+.price-card.featured .price-desc{color:rgba(255,255,255,0.8)}
+.price-amount{
+  font-family:'Alexandria';font-size:42px;font-weight:700;
+  color:var(--accent);margin-bottom:8px;
+}
+.price-amount .cur{font-size:18px;font-weight:500}
+.price-period{font-size:13px;color:var(--text-secondary);margin-bottom:28px}
+.price-card.featured .price-period{color:rgba(255,255,255,0.7)}
+.price-features{list-style:none;margin-bottom:32px}
+.price-features li{
+  padding:10px 0;font-size:14px;
+  display:flex;align-items:center;gap:10px;
+  color:var(--text);
+}
+.price-features li::before{
+  content:'✓';color:var(--accent);font-weight:700;
+  width:20px;height:20px;border-radius:50%;
+  background:var(--secondary);
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;flex-shrink:0;
+}
+.price-card.featured .price-features li::before{background:rgba(255,255,255,0.2);color:#fff}
+.price-btn{
+  width:100%;padding:14px;border-radius:50px;
+  border:none;cursor:pointer;font-family:inherit;
+  font-weight:500;font-size:15px;transition:all .3s;
+}
+.price-card .price-btn{background:var(--cta);color:#fff}
+.price-card .price-btn:hover{background:var(--cta-hover)}
+.price-card.featured .price-btn{background:#fff;color:var(--accent)}
+.price-card.featured .price-btn:hover{background:var(--bg)}
+
+/* BOOKING */
+.booking{background:var(--bg);position:relative;overflow:hidden}
+.booking::before{
+  content:'';position:absolute;top:-200px;left:-200px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,var(--secondary),transparent 70%);
+  opacity:.6;
+}
+.booking::after{
+  content:'';position:absolute;bottom:-200px;right:-200px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,var(--secondary),transparent 70%);
+  opacity:.6;
+}
+.booking-card{
+  max-width:680px;margin:0 auto;
+  background:#fff;padding:48px;
+  border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-xl);
+  position:relative;z-index:2;
+  border:1px solid var(--border);
+}
+.booking-card h2{font-size:28px;text-align:center;margin-bottom:8px}
+.booking-card > p{text-align:center;color:var(--text-secondary);margin-bottom:32px}
+.form-group{margin-bottom:20px}
+.form-group label{
+  display:block;font-size:14px;font-weight:500;
+  margin-bottom:8px;color:var(--primary);
+}
+.form-group input,.form-group textarea,.form-group select{
+  width:100%;padding:14px 18px;
+  border:1px solid var(--border);border-radius:12px;
+  font-family:inherit;font-size:15px;
+  background:var(--bg);color:var(--text);
+  transition:all .3s;
+}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{
+  outline:none;border-color:var(--accent);background:#fff;
+  box-shadow:0 0 0 4px rgba(79,138,139,0.1);
+}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.submit-btn{
+  width:100%;padding:18px;border-radius:50px;
+  background:var(--cta);color:#fff;
+  border:none;cursor:pointer;font-family:inherit;
+  font-size:16px;font-weight:600;
+  transition:all .3s;margin-top:8px;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.submit-btn:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+
+/* BLOG */
+.blog{background:#fff}
+.blog-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+.blog-card{
+  background:var(--bg);border-radius:var(--radius);
+  overflow:hidden;transition:all .4s;
+  border:1px solid var(--border);
+}
+.blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.blog-img{width:100%;height:200px;overflow:hidden}
+.blog-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.blog-card:hover .blog-img img{transform:scale(1.06)}
+.blog-body{padding:24px}
+.blog-tag{
+  display:inline-block;padding:4px 12px;
+  background:var(--secondary);color:var(--accent);
+  border-radius:50px;font-size:12px;font-weight:500;
+  margin-bottom:12px;
+}
+.blog-body h3{font-size:17px;margin-bottom:10px;line-height:1.4}
+.blog-body p{font-size:13px;color:var(--text-secondary);line-height:1.7}
+
+/* FOOTER */
+.site-footer{
+  background:var(--primary);color:#fff;
+  padding:72px 0 24px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:48px;margin-bottom:48px;
+}
+.footer-brand h3{color:#fff;font-size:20px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.footer-brand p{color:rgba(255,255,255,0.6);font-size:14px;line-height:1.8;max-width:320px}
+.footer-col h4{color:#fff;font-size:15px;margin-bottom:18px;font-family:'Alexandria'}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:rgba(255,255,255,0.6);font-size:14px;transition:color .3s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:24px;text-align:center;
+  color:rgba(255,255,255,0.4);font-size:13px;
+}
+
+/* WHATSAPP FLOAT */
+.wa-float{
+  position:fixed;bottom:28px;left:28px;
+  width:60px;height:60px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,0.4);
+  cursor:pointer;z-index:99;
+  transition:all .3s;
+  animation:float 3s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 14px 40px rgba(37,211,102,0.5)}
+.wa-float svg{width:30px;height:30px}
+.wa-float::before{
+  content:'';position:absolute;inset:-4px;
+  border-radius:50%;border:2px solid #25D366;
+  animation:ripple 2s infinite;
+}
+@keyframes ripple{0%{transform:scale(1);opacity:1}100%{transform:scale(1.4);opacity:0}}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:all .9s cubic-bezier(.2,.7,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(40px);transition:all .9s cubic-bezier(.2,.7,.3,1)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(-40px);transition:all .9s cubic-bezier(.2,.7,.3,1)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.delay-1{transition-delay:.1s}
+.delay-2{transition-delay:.2s}
+.delay-3{transition-delay:.3s}
+.delay-4{transition-delay:.4s}
+.delay-5{transition-delay:.5s}
+.delay-6{transition-delay:.6s}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .nav-menu{
+    position:fixed;top:0;right:-100%;
+    width:80%;max-width:320px;height:100vh;
+    background:#fff;flex-direction:column;
+    padding:80px 32px 32px;gap:24px;
+    transition:right .4s;box-shadow:var(--shadow-xl);
+    align-items:flex-start;
+  }
+  .nav-menu.open{right:0}
+  .menu-toggle{display:flex}
+  .menu-toggle.open span:nth-child(1){transform:rotate(45deg) translate(6px,6px)}
+  .menu-toggle.open span:nth-child(2){opacity:0}
+  .menu-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}
+  .nav-cta{width:100%;text-align:center;justify-content:center}
+  .about-wrap{grid-template-columns:1fr;gap:40px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:640px){
+  section{padding:72px 0}
+  .hero{padding:120px 0 60px}
+  .hero-actions{flex-direction:column}
+  .btn-primary,.btn-secondary{width:100%;justify-content:center}
+  .trust-badges{gap:16px}
+  .trust-item{font-size:13px}
+  .stats{grid-template-columns:1fr;gap:12px}
+  .form-row{grid-template-columns:1fr}
+  .booking-card{padding:32px 24px}
+  .footer-grid{grid-template-columns:1fr}
+  .wa-float{width:54px;height:54px;bottom:20px;left:20px}
+  .wa-float svg{width:26px;height:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container">
+    <nav class="nav-wrap">
+      <a href="#home" class="logo">
+        <span class="logo-mark">ن</span>
+        <span>نفسية</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#about">من أنا</a></li>
+        <li><a href="#faq">الأسئلة الشائعة</a></li>
+        <li><a href="#testimonials">آراء العملاء</a></li>
+        <li><a href="#contact">تواصل</a></li>
+        <li><a href="#contact" class="nav-cta">احجز جلستك</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/15bb59ebf-b516-4dcf-9a10-cfeec13fc910.png" alt="غرفة استشارة هادئة">
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge reveal">استشاري نفسي معتمد</span>
+      <h1 class="reveal delay-1">رحلة التغيير تبدأ <span class="accent">بخطوة واحدة</span></h1>
+      <p class="hero-sub reveal delay-2">في مساحة آمنة وهادئة يمكنك التحدث بحرية، وفهم مشاعرك، والعمل على تطوير حياتك خطوة بخطوة.</p>
+      <div class="hero-price reveal delay-3">
+        <span class="label">سعر الجلسة يبدأ من</span>
+        <span class="amount">250</span>
+        <span class="currency">ر.س</span>
+      </div>
+      <div class="hero-actions reveal delay-4">
+        <a href="#contact" class="btn-primary">احجز جلستك الآن
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </a>
+        <a href="#services" class="btn-secondary">تعرف على الخدمات</a>
+      </div>
+      <div class="trust-badges reveal delay-5">
+        <div class="trust-item"><span class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>خصوصية تامة</div>
+        <div class="trust-item"><span class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>جلسات أونلاين وحضورية</div>
+        <div class="trust-item"><span class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>استماع باهتمام</div>
+        <div class="trust-item"><span class="trust-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>خطة متابعة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMOTIONAL -->
+<section class="emotional">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">هل تشعر بأن...</span>
+      <h2 class="reveal delay-1">مشاعرك تستحق أن تُسمع</h2>
+      <p class="reveal delay-2">إذا كنت تمر بأي من هذه المشاعر، فأنت في المكان الصحيح</p>
+    </div>
+    <div class="emotional-grid">
+      <div class="emotion-card reveal"><span class="emotion-num">01</span><h3>أفكارك لا تتوقف؟</h3><p>عندما يمتلئ ذهنك بأفكار متسارعة ولا تجد لحظة هدوء.</p></div>
+      <div class="emotion-card reveal delay-1"><span class="emotion-num">02</span><h3>القلق يرافقك يومياً؟</h3><p>شعور دائم بالتوتر والقلق دون سبب واضح يسيطر على يومك.</p></div>
+      <div class="emotion-card reveal delay-2"><span class="emotion-num">03</span><h3>تشعر بالضغط المستمر؟</h3><p>مسؤوليات العمل والحياة تجعلك تشعر بأنك على حافة الانهيار.</p></div>
+      <div class="emotion-card reveal delay-3"><span class="emotion-num">04</span><h3>تفقد الحافز؟</h3><p>لم تعد تجد متعة في الأشياء التي كانت تسعدك من قبل.</p></div>
+      <div class="emotion-card reveal delay-4"><span class="emotion-num">05</span><h3>صعوبة في التعبير؟</h3><p>تجد صعوبة في فهم مشاعرك والتعبير عنها للآخرين.</p></div>
+      <div class="emotion-card reveal delay-5"><span class="emotion-num">06</span><h3>تبحث عن توازن نفسي؟</h3><p>ترغب في حياة أكثر هدوءاً واستقراراً على المستوى العاطفي.</p></div>
+    </div>
+    <div class="emotional-close reveal">
+      لست مضطراً لمواجهة كل ذلك <span class="accent">وحدك</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">خدماتنا</span>
+      <h2 class="reveal delay-1">مسارات مصممة لاحتياجاتك</h2>
+      <p class="reveal delay-2">نقدم مجموعة متنوعة من الخدمات النفسية المتخصصة لمساعدتك في رحلتك نحو التوازن</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/17fe92cce-ded6-4754-9f64-001de8ab69da.png" alt="إدارة القلق"></div>
+        <div class="service-body">
+          <h3>إدارة القلق</h3>
+          <p>تعلّم أدوات عملية للتخفيف من القلق واستعادة الهدوء الداخلي في حياتك اليومية.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal delay-1">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1e45dd6cf-828f-49c4-9387-7c2d02c3927f.png" alt="تنظيم الضغوط"></div>
+        <div class="service-body">
+          <h3>تنظيم الضغوط</h3>
+          <p>استراتيجيات فعّالة لإدارة ضغوط الحياة والعمل بطريقة صحية ومتوازنة.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal delay-2">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/16b8924a3-b3b3-4c35-9137-9896a5c5852a.png" alt="الثقة بالنفس"></div>
+        <div class="service-body">
+          <h3>الثقة بالنفس</h3>
+          <p>ابنِ علاقة إيجابية مع ذاتك وطوّر ثقتك من خلال خطوات عملية وملموسة.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal delay-3">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/198b1c749-7709-443f-a88d-311e0dfc460c.png" alt="العلاقات الأسرية"></div>
+        <div class="service-body">
+          <h3>العلاقات الأسرية</h3>
+          <p>تعزيز التواصل البنّاء داخل الأسرة وحل الخلافات بطرق صحية ومتفهمة.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal delay-4">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1d53b7049-21ba-45ea-9672-7960616bc5a3.png" alt="الإرشاد قبل الزواج"></div>
+        <div class="service-body">
+          <h3>الإرشاد قبل الزواج</h3>
+          <p>جلسات تحضيرية لبناء علاقة زوجية قوية ومستقرة قائمة على الفهم المتبادل.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal delay-5">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1e5e14daa-103d-4508-bf07-aaa0607dc9d4.png" alt="تطوير الذات"></div>
+        <div class="service-body">
+          <h3>تطوير الذات</h3>
+          <p>اكتشف إمكاناتك الحقيقية واعمل على تطوير مهاراتك الشخصية والمهنية.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1631ac3d2-6af8-462f-9a25-404a88278344.png" alt="جلسات أونلاين"></div>
+        <div class="service-body">
+          <h3>جلسات أونلاين</h3>
+          <p>جلسات نفسية احترافية من راحة منزلك عبر الإنترنت بجودة عالية وخصوصية تامة.</p>
+          <a href="#contact" class="service-link">اعرف المزيد ←</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">كيف نعمل</span>
+      <h2 class="reveal delay-1">خمس خطوات نحو التغيير</h2>
+      <p class="reveal delay-2">رحلة واضحة ومنظمة تبدأ بخطوة واحدة وتنتهي بتحول حقيقي</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-num">1</div><div class="tl-content"><h3>احجز موعدك</h3><p>اختر الوقت المناسب لك عبر نموذج الحجز أو واتساب.</p></div></div>
+      <div class="tl-item reveal delay-1"><div class="tl-num">2</div><div class="tl-content"><h3>جلسة التعارف</h3><p>نتعرف على بعض ونفهم طبيعة ما تمر به في بيئة آمنة.</p></div></div>
+      <div class="tl-item reveal delay-2"><div class="tl-num">3</div><div class="tl-content"><h3>فهم احتياجاتك</h3><p>نحلل معاً الجذور الحقيقية للمشاعر والتحديات التي تواجهك.</p></div></div>
+      <div class="tl-item reveal delay-3"><div class="tl-num">4</div><div class="tl-content"><h3>وضع خطة مناسبة</h3><p>نصمم خطة مخصصة تناسب احتياجاتك وأهدافك الشخصية.</p></div></div>
+      <div class="tl-item reveal delay-4"><div class="tl-num">5</div><div class="tl-content"><h3>متابعة مستمرة</h3><p>نرافقك في رحلتك ونعدّل الخطة حسب تقدمك واحتياجاتك.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">لماذا نحن</span>
+      <h2 class="reveal delay-1">ما يميز تجربتك معنا</h2>
+      <p class="reveal delay-2">نؤمن بأن كل شخص يستحق مساحة آمنة للتحدث والنمو</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>بيئة آمنة</h3><p>مساحة هادئة ومريحة تشعر فيها بالأمان والراحة.</p></div>
+      <div class="why-card reveal delay-1"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>سرية كاملة</h3><p>كل ما تشاركه يبقى بيننا، بسرية تامة واحترام كامل.</p></div>
+      <div class="why-card reveal delay-2"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>استماع باهتمام</h3><p>نستمع إليك بقلب مفتوح دون أحكام أو تقييمات.</p></div>
+      <div class="why-card reveal delay-3"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>خطة تناسبك</h3><p>نصمم خطة مخصصة تناسب احتياجاتك وأهدافك الفريدة.</p></div>
+      <div class="why-card reveal delay-4"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>مرونة في المواعيد</h3><p>مواعيد مرنة تناسب جدولك المزدحم صباحاً ومساءً.</p></div>
+      <div class="why-card reveal delay-5"><div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>متابعة مستمرة</h3><p>نرافقك في كل خطوة ونعدّل المسار حسب تقدمك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-img reveal-right">
+        <img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1d6664849-c198-4fdc-a453-e1759fe408b2.png" alt="المستشارة النفسية">
+        <div class="about-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          معتمدة ومرخّصة
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag reveal-left">من أنا</span>
+        <h2 class="reveal-left delay-1">تعرف على المستشار</h2>
+        <p class="reveal-left delay-2">أنا استشاري نفسي ومدرب صحة نفسية، أؤمن بأن كل إنسان يحمل بداخله القدرة على التغيير والنمو. على مدار سنوات عملي، رافقت مئات الأشخاص في رحلتهم نحو فهم أنفسهم بشكل أعمق وبناء حياة أكثر توازناً.</p>
+        <p class="reveal-left delay-3">أعملي قائم على الاستماع العميق، والفهم الحقيقي، وتقديم أدوات عملية تناسب كل شخص حسب احتياجاته الفريدة. هدفي أن تكون هذه المساحة آمنة لك، حيث يمكنك التحدث بحرية دون خوف من الأحكام.</p>
+        <div class="stats reveal-left delay-4">
+          <div class="stat-card"><div class="stat-num" data-target="500">0</div><div class="stat-label">جلسة+</div></div>
+          <div class="stat-card"><div class="stat-num" data-target="7">0</div><div class="stat-label">سنوات خبرة</div></div>
+          <div class="stat-card"><div class="stat-num" data-target="98">0</div><div class="stat-label">رضا العملاء %</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">قصص نجاح</span>
+      <h2 class="reveal delay-1">تجارب حقيقية من عملائنا</h2>
+      <p class="reveal delay-2">آراء أشخاص وثقوا بنا وشاركوا رحلتهم نحو التوازن النفسي</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <p class="test-text">تجربة غيّرت طريقة نظري للأمور. شعرت بأنني مُستمع إليه حقاً، وتعلمت أدوات ساعدتني في التعامل مع القلق بشكل أفضل.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-user">
+          <img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/130c00a45-200a-4bb4-92b6-c8e210b70eac.png" class="test-avatar" alt="عميلة">
+          <div><div class="test-name">سارة م.</div><div class="test-role">عميلة منذ سنة</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal delay-1">
+        <div class="test-quote">"</div>
+        <p class="test-text">الجلسات ساعدتني في فهم مشاعري بشكل أعمق. أسلوب هادئ ومحترف، وشعرت بالراحة منذ الجلسة الأولى.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-user">
+          <img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1d0bacef0-7adc-4b12-856a-ad5df7051500.png" class="test-avatar" alt="عميل">
+          <div><div class="test-name">أحمد ر.</div><div class="test-role">عميل منذ 6 أشهر</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal delay-2">
+        <div class="test-quote">"</div>
+        <p class="test-text">كنت مترددة في البداية، لكن التجربة فاقت توقعاتي. الآن أشعر بتوازن أكبر في حياتي وعلاقاتي.</p>
+        <div class="test-stars">★★★★★</div>
+        <div class="test-user">
+          <img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1e0927663-c6d6-4bce-85ea-43f818fcb85b.png" class="test-avatar" alt="عميلة">
+          <div><div class="test-name">نورة ع.</div><div class="test-role">عميلة منذ 8 أشهر</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">الأسئلة الشائعة</span>
+      <h2 class="reveal delay-1">إجابات على تساؤلاتك</h2>
+      <p class="reveal delay-2">نؤمن بأن الوضوح يبني الثقة، لذلك نجيب على أكثر الأسئلة شيوعاً</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">كيف أحجز جلسة؟<span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>يمكنك الحجز بسهولة عبر نموذج الحجز في أسفل الصفحة، أو عبر التواصل المباشر على واتساب. سنرد عليك في أقرب وقت لتأكيد الموعد المناسب لك.</p></div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <div class="faq-q">هل الجلسات سرية تماماً؟<span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>نعم، السرية التامة هي أساس عملنا. كل ما تشاركه في الجلسات يبقى بيننا، ونلتزم بأعلى معايير الخصوصية والسرية المهنية.</p></div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <div class="faq-q">هل يمكن أن تكون الجلسات أونلاين؟<span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>بالتأكيد، نقدم جلسات أونلاين عالية الجودة عبر منصات آمنة، بحيث يمكنك الحصول على الدعم النفسي من أي مكان وفي الوقت الذي يناسبك.</p></div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <div class="faq-q">كم تستغرق الجلسة الواحدة؟<span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>تستغرق الجلسة الفردية عادةً ما بين 45 إلى 60 دقيقة، وهو الوقت الكافي للعمل بعمق على ما تمر به في بيئة مريحة وهادئة.</p></div>
+      </div>
+      <div class="faq-item reveal delay-4">
+        <div class="faq-q">هل هذا مناسب لي؟<span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>إذا كنت تشعر بأنك بحاجة إلى مساحة آمنة للتحدث، أو ترغب في فهم مشاعرك بشكل أفضل، أو تسعى لتطوير حياتك، فهذا المكان مناسب لك. لا يشترط أن تكون في أزمة كبيرة لطلب المساعدة.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">الباقات والأسعار</span>
+      <h2 class="reveal delay-1">اختر الباقة المناسبة لك</h2>
+      <p class="reveal delay-2">باقات مرنة مصممة لتناسب احتياجاتك وميزانيتك</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>جلسة فردية</h3>
+        <p class="price-desc">مثالية للبدء في رحلتك</p>
+        <div class="price-amount">250<span class="cur"> ر.س</span></div>
+        <div class="price-period">لكل جلسة (60 دقيقة)</div>
+        <ul class="price-features">
+          <li>جلسة واحدة 60 دقيقة</li>
+          <li>تقييم أولي شامل</li>
+          <li>أدوات عملية للتعامل</li>
+          <li>ملخص بعد الجلسة</li>
+        </ul>
+        <button class="price-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">احجز الآن</button>
+      </div>
+      <div class="price-card featured reveal delay-1">
+        <span class="price-badge">الأكثر طلباً</span>
+        <h3>الباقة الشهرية</h3>
+        <p class="price-desc">لنتائج مستدامة ومتوازنة</p>
+        <div class="price-amount">850<span class="cur"> ر.س</span></div>
+        <div class="price-period">4 جلسات شهرياً</div>
+        <ul class="price-features">
+          <li>4 جلسات شهرية</li>
+          <li>خطة عمل مخصصة</li>
+          <li>متابعة عبر واتساب</li>
+          <li>مواد تعليمية إضافية</li>
+          <li>خصم 15%</li>
+        </ul>
+        <button class="price-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">احجز الآن</button>
+      </div>
+      <div class="price-card reveal delay-2">
+        <h3>برنامج متابعة</h3>
+        <p class="price-desc">للتحول العميق والشامل</p>
+        <div class="price-amount">2200<span class="cur"> ر.س</span></div>
+        <div class="price-period">12 جلسة (3 أشهر)</div>
+        <ul class="price-features">
+          <li>12 جلسة مكثفة</li>
+          <li>برنامج شامل مخصص</li>
+          <li>متابعة يومية</li>
+          <li>تقارير تقدم دورية</li>
+          <li>خصم 25%</li>
+        </ul>
+        <button class="price-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">احجز الآن</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="contact">
+  <div class="container">
+    <div class="booking-card">
+      <h2 class="reveal">احجز جلستك الآن</h2>
+      <p class="reveal delay-1">املأ النموذج وسنتواصل معك خلال ساعات قليلة</p>
+      <form id="bookingForm" class="reveal delay-2">
+        <div class="form-group">
+          <label for="fullName">الاسم الكامل</label>
+          <input type="text" id="fullName" required placeholder="أدخل اسمك الكامل">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" required placeholder="05xxxxxxxx">
+          </div>
+          <div class="form-group">
+            <label for="age">العمر</label>
+            <input type="number" id="age" min="13" max="99" required placeholder="عمرك">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="city">المدينة</label>
+          <input type="text" id="city" required placeholder="المدينة التي تقيم فيها">
+        </div>
+        <div class="form-group">
+          <label for="message">كيف يمكنني مساعدتك؟</label>
+          <textarea id="message" required placeholder="شاركنا ما تمر به باختصار..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          احجز جلستك
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag reveal">المقالات</span>
+      <h2 class="reveal delay-1">من مدونتنا</h2>
+      <p class="reveal delay-2">مقالات ونصائح عملية لدعم صحتك النفسية في حياتك اليومية</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1d7f9eeb4-09ac-4c51-9d00-773c3cbeca09.png" alt="التعامل مع التوتر"></div>
+        <div class="blog-body">
+          <span class="blog-tag">صحة نفسية</span>
+          <h3>كيف تتعامل مع التوتر؟</h3>
+          <p>أدوات عملية وبسيطة يمكنك تطبيقها يومياً للتخفيف من التوتر واستعادة هدوئك الداخلي.</p>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-1">
+        <div class="blog-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/159cd8516-b32f-4484-a4b1-0c90f1f00c28.png" alt="تحسين الثقة بالنفس"></div>
+        <div class="blog-body">
+          <span class="blog-tag">تطوير الذات</span>
+          <h3>طرق تحسين الثقة بالنفس</h3>
+          <p>خطوات عملية لبناء علاقة إيجابية مع ذاتك وتعزيز ثقتك في مختلف جوانب الحياة.</p>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-2">
+        <div class="blog-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/15d89bcf3-d4c7-43cb-9a75-ee8e1c54a1c8.png" alt="تنظيم المشاعر"></div>
+        <div class="blog-body">
+          <span class="blog-tag">إدارة المشاعر</span>
+          <h3>كيف تنظم مشاعرك؟</h3>
+          <p>فهم المشاعر وتنظيمها مهارة يمكن تعلمها، إليك أهم الاستراتيجيات الفعّالة.</p>
+        </div>
+      </article>
+      <article class="blog-card reveal delay-3">
+        <div class="blog-img"><img src="https://image.qwenlm.ai/public_source/823f4774-2518-42c8-bb94-6afe1aa6181d/1b9d4b8cf-5d33-4478-b347-892b010ba87c.png" alt="العادات اليومية"></div>
+        <div class="blog-body">
+          <span class="blog-tag">نمط الحياة</span>
+          <h3>العادات اليومية للصحة النفسية</h3>
+          <p>عادات بسيطة يمكنك دمجها في يومك لدعم صحتك النفسية وتعزيز توازنك الداخلي.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3><span class="logo-mark" style="background:linear-gradient(135deg,var(--accent),#6BA8A9);width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#fff">ن</span> نفسية</h3>
+        <p>مساحة آمنة وهادئة للتحدث بحرية، وفهم مشاعرك، والعمل على تطوير حياتك خطوة بخطوة.</p>
+      </div>
+      <div class="footer-col">
+        <h4>الخدمات</h4>
+        <ul>
+          <li><a href="#services">إدارة القلق</a></li>
+          <li><a href="#services">تنظيم الضغوط</a></li>
+          <li><a href="#services">الثقة بالنفس</a></li>
+          <li><a href="#services">الإرشاد الأسري</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>روابط</h4>
+        <ul>
+          <li><a href="#about">من أنا</a></li>
+          <li><a href="#testimonials">آراء العملاء</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل</h4>
+        <ul>
+          <li><a href="#" id="footerWa">واتساب</a></li>
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li><a href="#">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © 2026 - نفسية | استشاري نفسي محترف
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" class="wa-float" id="waFloat" aria-label="تواصل عبر واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+// Header scroll
+const header=document.getElementById('header');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>50)header.classList.add('scrolled');
+  else header.classList.remove('scrolled');
+});
+
+// Mobile menu
+const menuToggle=document.getElementById('menuToggle');
+const navMenu=document.getElementById('navMenu');
+menuToggle.addEventListener('click',()=>{
+  menuToggle.classList.toggle('open');
+  navMenu.classList.toggle('open');
+});
+document.querySelectorAll('.nav-menu a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    menuToggle.classList.remove('open');
+    navMenu.classList.remove('open');
+  });
+});
+
+// Reveal on scroll
+const revealEls=document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+revealEls.forEach(el=>observer.observe(el));
+
+// Counter animation
+const counters=document.querySelectorAll('.stat-num');
+const counterObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target;
+      const target=+el.dataset.target;
+      let cur=0;
+      const step=target/60;
+      const tick=()=>{
+        cur+=step;
+        if(cur<target){
+          el.textContent=Math.ceil(cur);
+          requestAnimationFrame(tick);
+        }else{
+          el.textContent=target;
+        }
+      };
+      tick();
+      counterObs.unobserve(el);
+    }
+  });
+},{threshold:0.5});
+counters.forEach(c=>counterObs.observe(c));
+
+// FAQ
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.querySelector('.faq-q').addEventListener('click',()=>{
+    const wasActive=item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));
+    if(!wasActive)item.classList.add('active');
+  });
+});
+
+// WhatsApp booking
+const WA_NUMBER='966500000000'; // Replace with actual number
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=document.getElementById('fullName').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const age=document.getElementById('age').value.trim();
+  const city=document.getElementById('city').value.trim();
+  const msg=document.getElementById('message').value.trim();
+  const text=`مرحباً، أرغب في حجز جلسة استشارية.\n\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالعمر: ${age}\nالمدينة: ${city}\n\nملاحظات: ${msg}`;
+  const url=`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.open(url,'_blank');
+});
+
+// WhatsApp float
+document.getElementById('waFloat').addEventListener('click',function(e){
+  e.preventDefault();
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('مرحباً، أرغب في الاستفسار عن حجز جلسة استشارية.')}`,'_blank');
+});
+document.getElementById('footerWa').addEventListener('click',function(e){
+  e.preventDefault();
+  window.open(`https://wa.me/${WA_NUMBER}`,'_blank');
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const href=this.getAttribute('href');
+    if(href.length>1){
+      const target=document.querySelector(href);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
+
